@@ -5,8 +5,8 @@ if ARGV.size != 1
     exit 1
 end
 
-json = File.open("content/#{ARGV[0]}") do |file|
-    JSON.parse(file)
-end
+content = File.read("content/#{ARGV[0]}")
 
-puts json
+hash_content = Hash(String, String).from_json(content)
+
+puts hash_content
