@@ -1,2 +1,3 @@
-# json-reader-crystal
-Simple JSON reader developed using Crystal
+# Crystal JSON Reader
+
+Simple JSON reader example developed using Crystal. 
